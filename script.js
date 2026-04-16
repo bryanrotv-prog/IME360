@@ -31,6 +31,25 @@ const setText = (selector, value) => {
   });
 };
 
+const initImageFallbacks = () => {
+  document.querySelectorAll("img[data-fallback-src]").forEach((image) => {
+    const applyFallback = () => {
+      if (image.dataset.fallbackApplied === "true") {
+        return;
+      }
+
+      image.dataset.fallbackApplied = "true";
+      image.src = image.dataset.fallbackSrc;
+    };
+
+    image.addEventListener("error", applyFallback);
+
+    if (image.complete && image.naturalWidth === 0) {
+      applyFallback();
+    }
+  });
+};
+
 const initContactData = () => {
   const defaultLink = buildWhatsAppUrl(buildDefaultMessage());
   const qrImage = document.getElementById("whatsapp-qr");
@@ -98,3 +117,4 @@ const initReveal = () => {
 
 initContactData();
 initReveal();
+initImageFallbacks();
