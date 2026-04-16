@@ -609,6 +609,10 @@ section[id] {
   object-position: center;
 }
 
+.service-media-portrait {
+  aspect-ratio: 3 / 4;
+}
+
 .service-copy {
   margin: 0;
   color: var(--ink-800);
@@ -712,6 +716,10 @@ section[id] {
 
 .gallery-item:not(.gallery-item-large):not(.gallery-item-wide) {
   aspect-ratio: 4 / 3;
+}
+
+.gallery-item-portrait {
+  aspect-ratio: 3 / 4;
 }
 
 .gallery-duo {
@@ -1075,6 +1083,10 @@ section[id] {
     aspect-ratio: 4 / 3;
   }
 
+  .gallery-item.gallery-item-portrait {
+    aspect-ratio: 3 / 4;
+  }
+
   .gallery-item-wide {
     grid-column: 1 / -1;
     min-height: auto;
@@ -1151,6 +1163,10 @@ section[id] {
   .service-card:nth-child(7) .service-media,
   .service-card:nth-child(8) .service-media {
     aspect-ratio: 1 / 1;
+  }
+
+  .service-media-portrait {
+    aspect-ratio: 3 / 4;
   }
 
   .price-grid {
