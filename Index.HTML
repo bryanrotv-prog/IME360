@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios para Eventos | Landing Mobile-First</title>
+  <title>IME360 | Servicios para Eventos</title>
   <meta
     name="description"
-    content="Landing page para mostrar cabina 360, letras luminosas, caballetes, espejo personalizado, carrito de shots y mas servicios para eventos."
+    content="IME360 ofrece cabina 360, caballetes, letras luminosas, espejo personalizado, carrito de shots y paletas preparadas para eventos."
   >
   <meta name="theme-color" content="#2c709e">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,16 +22,18 @@
     <header class="site-header">
       <div class="container header-row">
         <a class="brand" href="#inicio" aria-label="Ir al inicio">
-          <span class="brand-mark" aria-hidden="true">EV</span>
-          <span class="brand-copy">
-            <span class="eyebrow">Experiencias para eventos</span>
-            <span class="brand-name" data-brand-name>Tu Marca de Eventos</span>
-          </span>
+          <img
+            class="brand-logo"
+            src="assets/LOGO (NEGRO).png"
+            alt="IME360"
+            loading="eager"
+            decoding="async"
+          >
         </a>
 
         <nav class="site-nav" aria-label="Secciones principales">
           <a href="#servicios">Servicios</a>
-          <a href="#proceso">Proceso</a>
+          <a href="#galeria">Galeria</a>
           <a href="#contacto">Contacto</a>
         </nav>
       </div>
@@ -41,11 +43,11 @@
       <section class="hero" id="inicio">
         <div class="container hero-grid">
           <div class="hero-copy" data-reveal>
-            <p class="section-kicker">Montajes visuales que elevan la experiencia</p>
-            <h1>Haz que tu evento se vea inolvidable desde la primera foto.</h1>
+            <p class="section-kicker">IME360</p>
+            <h1>Servicios para eventos con imagen limpia, precios claros y WhatsApp directo.</h1>
             <p class="hero-text">
-              Cabina 360, letras luminosas, espejo personalizado, caballetes y detalles que le
-              dan presencia a bodas, XV anos, graduaciones y celebraciones en
+              Cabina 360, caballetes, letras luminosas, espejo personalizado, carrito de shots y
+              paletas preparadas para bodas, XV anos, graduaciones y eventos sociales en
               <span data-service-area>tu ciudad y alrededores</span>.
             </p>
 
@@ -58,213 +60,424 @@
               >
                 Cotizar por WhatsApp
               </a>
-              <a class="btn btn-secondary" href="#contacto">Ver QR</a>
+              <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
             </div>
 
-            <ul class="hero-highlights" aria-label="Beneficios principales">
-              <li>Atencion personalizada</li>
-              <li>Montaje con presencia visual</li>
-              <li>Ideal para celular y redes</li>
-            </ul>
-          </div>
-
-          <div class="hero-showcase" data-reveal>
-            <div class="showcase-panel">
-              <div class="showcase-chip">Diseno elegante</div>
-              <div class="showcase-card showcase-card-main">
-                <p class="card-label">Cabina 360</p>
-                <h2>Experiencia protagonista para fotos, video y reels.</h2>
-                <p>
-                  Montajes pensados para llamar la atencion en persona y tambien en camara.
-                </p>
-              </div>
-              <div class="showcase-card showcase-card-side">
-                <p class="card-label">Letras luminosas</p>
-                <p>Volumen, brillo y un punto focal fuerte para tu evento.</p>
-              </div>
-              <div class="showcase-orbit orbit-one" aria-hidden="true"></div>
-              <div class="showcase-orbit orbit-two" aria-hidden="true"></div>
+            <div class="hero-notes" aria-label="Puntos clave">
+              <span>Precios visibles</span>
+              <span>Paquete 3+ con descuento</span>
+              <span>Respuesta por WhatsApp</span>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="occasion-strip" aria-label="Tipos de evento" data-reveal>
-        <div class="container chip-row">
-          <span>Bodas</span>
-          <span>XV anos</span>
-          <span>Graduaciones</span>
-          <span>Cumpleanos</span>
-          <span>Eventos sociales</span>
+          <div class="hero-media" data-reveal>
+            <figure class="hero-card hero-card-main">
+              <img
+                src="assets/Cabina 360.jpg"
+                alt="Cabina 360 instalada en evento"
+                loading="eager"
+                decoding="async"
+              >
+              <figcaption class="hero-overlay">
+                <img
+                  class="hero-logo-white"
+                  src="assets/LOGO BLANCO.png"
+                  alt="IME360"
+                  loading="lazy"
+                  decoding="async"
+                >
+                <span>Cabina 360</span>
+              </figcaption>
+            </figure>
+
+            <div class="hero-side-grid">
+              <figure class="hero-card">
+                <img
+                  src="assets/Letras.jpg"
+                  alt="Letras gigantes luminosas"
+                  loading="lazy"
+                  decoding="async"
+                >
+                <figcaption>Letras luminosas</figcaption>
+              </figure>
+              <figure class="hero-card">
+                <img
+                  src="assets/Espejo.jpg"
+                  alt="Espejo personalizado con luz"
+                  loading="lazy"
+                  decoding="async"
+                >
+                <figcaption>Espejo personalizado</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section services" id="servicios">
         <div class="container">
           <div class="section-heading" data-reveal>
-            <p class="section-kicker">Servicios</p>
-            <h2>Soluciones que hacen que la gente mire, grabe y comparta.</h2>
-            <p>
-              La pagina esta pensada para explicar rapido lo que ofreces y llevar a la persona
-              directamente a cotizar.
-            </p>
+            <p class="section-kicker">Servicios y precios</p>
+            <h2>Precio individual y precio especial al contratar 3 servicios o mas.</h2>
+          </div>
+
+          <div class="pricing-bar" data-reveal>
+            <span>MXN</span>
+            <span>Paquete 3+</span>
+            <span>WhatsApp directo</span>
           </div>
 
           <div class="service-grid">
             <article class="service-card" data-reveal>
-              <p class="service-index">01</p>
-              <h3>Cabina de fotos 360</h3>
-              <p>Videos envolventes y memorables para invitados que quieren grabar y compartir.</p>
+              <figure class="service-media">
+                <img
+                  src="assets/Cabina 360.jpg"
+                  alt="Cabina 360 para eventos"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
+              <h3>Cabina 360</h3>
+              <p class="service-copy">Video inmersivo para reels y contenido en evento.</p>
+              <div class="price-grid">
+                <article class="price-card">
+                  <span class="price-label">Individual</span>
+                  <strong>$2,400</strong>
+                  <small>2 horas</small>
+                </article>
+                <article class="price-card price-card-featured">
+                  <span class="price-label">Paquete 3+</span>
+                  <strong>$2,200</strong>
+                  <small>2 horas</small>
+                </article>
+              </div>
+              <a
+                class="service-link js-whatsapp-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-service="Cabina 360"
+              >
+                Cotizar este servicio
+              </a>
             </article>
 
             <article class="service-card" data-reveal>
-              <p class="service-index">02</p>
+              <figure class="service-media">
+                <img
+                  src="assets/Caballete digital.jpg"
+                  alt="Caballete digital para evento"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
               <h3>Caballete digital</h3>
-              <p>Presencia moderna para bienvenida, programa del evento o presentacion visual.</p>
+              <p class="service-copy">Pantalla vertical para bienvenida o informacion del evento.</p>
+              <div class="price-grid">
+                <article class="price-card">
+                  <span class="price-label">Individual</span>
+                  <strong>$2,400</strong>
+                  <small>5 horas</small>
+                </article>
+                <article class="price-card price-card-featured">
+                  <span class="price-label">Paquete 3+</span>
+                  <strong>$1,700</strong>
+                  <small>2 horas</small>
+                </article>
+              </div>
+              <a
+                class="service-link js-whatsapp-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-service="Caballete digital"
+              >
+                Cotizar este servicio
+              </a>
             </article>
 
             <article class="service-card" data-reveal>
-              <p class="service-index">03</p>
+              <figure class="service-media">
+                <img
+                  src="assets/Caballete de madera.jpg"
+                  alt="Caballete de madera para evento"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
               <h3>Caballete de madera</h3>
-              <p>Un detalle calido y elegante para senaletica, accesos o anuncios especiales.</p>
+              <p class="service-copy">Base elegante para accesos, anuncios o fotografia.</p>
+              <div class="price-grid">
+                <article class="price-card">
+                  <span class="price-label">Individual</span>
+                  <strong>$400</strong>
+                  <small>Pieza</small>
+                </article>
+                <article class="price-card price-card-featured">
+                  <span class="price-label">Paquete 3+</span>
+                  <strong>$300</strong>
+                  <small>Pieza</small>
+                </article>
+              </div>
+              <a
+                class="service-link js-whatsapp-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-service="Caballete de madera"
+              >
+                Cotizar este servicio
+              </a>
             </article>
 
             <article class="service-card" data-reveal>
-              <p class="service-index">04</p>
+              <figure class="service-media">
+                <img
+                  src="assets/Caballete digital.jpg"
+                  alt="Anuncio de bienvenida en caballete digital"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
               <h3>Anuncio de bienvenida</h3>
-              <p>Primera impresion cuidada para recibir invitados con estilo desde el acceso.</p>
+              <p class="service-copy">Primera impresion limpia para recibir invitados.</p>
+              <div class="price-grid">
+                <article class="price-card">
+                  <span class="price-label">Individual</span>
+                  <strong>$400</strong>
+                  <small>Pieza</small>
+                </article>
+                <article class="price-card price-card-featured">
+                  <span class="price-label">Paquete 3+</span>
+                  <strong>$300</strong>
+                  <small>Pieza</small>
+                </article>
+              </div>
+              <a
+                class="service-link js-whatsapp-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-service="Anuncio de bienvenida"
+              >
+                Cotizar este servicio
+              </a>
             </article>
 
             <article class="service-card" data-reveal>
-              <p class="service-index">05</p>
+              <figure class="service-media">
+                <img
+                  src="assets/Letras.jpg"
+                  alt="Letras gigantes luminosas"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
               <h3>Letras gigantes luminosas</h3>
-              <p>Un punto de impacto que da brillo, escala y mejores fotos en el montaje.</p>
+              <p class="service-copy">Punto focal para foto, entrada o escenario.</p>
+              <div class="price-grid">
+                <article class="price-card">
+                  <span class="price-label">Individual</span>
+                  <strong>$350</strong>
+                  <small>Por letra</small>
+                </article>
+                <article class="price-card price-card-featured">
+                  <span class="price-label">Paquete 3+</span>
+                  <strong>$300</strong>
+                  <small>Por letra</small>
+                </article>
+              </div>
+              <a
+                class="service-link js-whatsapp-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-service="Letras gigantes luminosas"
+              >
+                Cotizar este servicio
+              </a>
             </article>
 
             <article class="service-card" data-reveal>
-              <p class="service-index">06</p>
-              <h3>Espejo con letras personalizadas con luz</h3>
-              <p>Elemento decorativo con presencia premium para nombres, frases o branding.</p>
+              <figure class="service-media">
+                <img
+                  src="assets/Espejo.jpg"
+                  alt="Espejo personalizado con luz para evento"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
+              <h3>Espejo personalizado</h3>
+              <p class="service-copy">Espejo decorado para bienvenida o detalle especial.</p>
+              <div class="price-grid">
+                <article class="price-card">
+                  <span class="price-label">Individual</span>
+                  <strong>$1,500</strong>
+                  <small>Con decoracion</small>
+                </article>
+                <article class="price-card price-card-featured">
+                  <span class="price-label">Paquete 3+</span>
+                  <strong>$1,200</strong>
+                  <small>Con decoracion</small>
+                </article>
+              </div>
+              <a
+                class="service-link js-whatsapp-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-service="Espejo personalizado con decoracion"
+              >
+                Cotizar este servicio
+              </a>
             </article>
 
             <article class="service-card" data-reveal>
-              <p class="service-index">07</p>
+              <figure class="service-media">
+                <img
+                  src="assets/Carrito de shots.jpg"
+                  alt="Carrito de shots para evento"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
               <h3>Carrito de shots</h3>
-              <p>Un servicio vistoso para activar la convivencia y sumar experiencia al evento.</p>
+              <p class="service-copy">Montaje compacto para activar la convivencia.</p>
+              <div class="price-grid">
+                <article class="price-card">
+                  <span class="price-label">Individual</span>
+                  <strong>$400</strong>
+                  <small>Servicio</small>
+                </article>
+                <article class="price-card price-card-featured">
+                  <span class="price-label">Paquete 3+</span>
+                  <strong>$400</strong>
+                  <small>Servicio</small>
+                </article>
+              </div>
+              <a
+                class="service-link js-whatsapp-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-service="Carrito de shots"
+              >
+                Cotizar este servicio
+              </a>
             </article>
 
             <article class="service-card" data-reveal>
-              <p class="service-index">08</p>
-              <h3>Paletas de hielo preparadas</h3>
-              <p>Presentacion fresca y llamativa para una mesa mas memorable y fotogenica.</p>
+              <figure class="service-media">
+                <img
+                  src="assets/Snacks.jpg"
+                  alt="Mesa de snacks y paletas preparadas"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </figure>
+              <h3>Paletas preparadas</h3>
+              <p class="service-copy">Presentacion fresca para mesas o servicio por pieza.</p>
+              <div class="price-grid">
+                <article class="price-card">
+                  <span class="price-label">Individual</span>
+                  <strong>$35</strong>
+                  <small>Por unidad</small>
+                </article>
+                <article class="price-card price-card-featured">
+                  <span class="price-label">Paquete 3+</span>
+                  <strong>$30</strong>
+                  <small>Por unidad</small>
+                </article>
+              </div>
+              <p class="service-note">Minimo 50 piezas.</p>
+              <a
+                class="service-link js-whatsapp-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                data-service="Paletas preparadas"
+              >
+                Cotizar este servicio
+              </a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section process" id="proceso">
+      <section class="section gallery" id="galeria">
         <div class="container">
           <div class="section-heading narrow" data-reveal>
-            <p class="section-kicker">Como funciona</p>
-            <h2>Un proceso simple para cotizar y apartar tu fecha desde el telefono.</h2>
-          </div>
-
-          <div class="process-grid">
-            <article class="process-card" data-reveal>
-              <span class="process-step">1</span>
-              <h3>Escribes por WhatsApp</h3>
-              <p>Comparte fecha, tipo de evento, zona y que servicio te interesa.</p>
-            </article>
-
-            <article class="process-card" data-reveal>
-              <span class="process-step">2</span>
-              <h3>Recibes propuesta</h3>
-              <p>Se ajusta una cotizacion clara segun el montaje y la experiencia que buscas.</p>
-            </article>
-
-            <article class="process-card" data-reveal>
-              <span class="process-step">3</span>
-              <h3>Reservas tu fecha</h3>
-              <p>Con los detalles definidos, apartas y se prepara la presentacion del evento.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section benefits">
-        <div class="container benefits-grid">
-          <div class="section-heading compact" data-reveal>
-            <p class="section-kicker">Por que elegirte</p>
-            <h2>Una presencia mas premium sin hacer complicada la decision del cliente.</h2>
-          </div>
-
-          <div class="benefit-list">
-            <article class="benefit-card" data-reveal>
-              <h3>Atencion cercana</h3>
-              <p>El visitante sabe en segundos que haces y como contactarte sin perderse.</p>
-            </article>
-            <article class="benefit-card" data-reveal>
-              <h3>Imagen cuidada</h3>
-              <p>La presentacion transmite orden, estilo y una sensacion mas profesional.</p>
-            </article>
-            <article class="benefit-card" data-reveal>
-              <h3>Personalizacion facil</h3>
-              <p>La base esta lista para cambiar textos, fotos y zona de servicio cuando quieras.</p>
-            </article>
-            <article class="benefit-card" data-reveal>
-              <h3>Foco en cotizar</h3>
-              <p>No hay pasos extra: la web dirige a la persona a escribirte por WhatsApp.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section gallery">
-        <div class="container">
-          <div class="section-heading" data-reveal>
-            <p class="section-kicker">Galeria lista para llenar</p>
-            <h2>Espacios elegantes para reemplazar despues con tus fotos reales.</h2>
-            <p>
-              Mientras juntas material, la pagina sigue viendose completa y visualmente cuidada.
-            </p>
+            <p class="section-kicker">Montajes reales</p>
+            <h2>Algunas imagenes reales de los servicios.</h2>
           </div>
 
           <div class="gallery-grid">
-            <article class="gallery-card gallery-card-large" data-reveal>
-              <p class="gallery-tag">Cabina 360</p>
-              <h3>Area principal para una foto impactante del montaje.</h3>
-              <span>Coloca aqui una imagen real cuando la tengas.</span>
-            </article>
+            <figure class="gallery-item gallery-item-large" data-reveal>
+              <img
+                src="assets/Cabina 360.jpg"
+                alt="Cabina 360 en montaje real"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Cabina 360</figcaption>
+            </figure>
 
-            <article class="gallery-card" data-reveal>
-              <p class="gallery-tag">Letras luminosas</p>
-              <h3>Composicion ideal para mostrar escala y brillo.</h3>
-              <span>Placeholder listo para reemplazo.</span>
-            </article>
+            <figure class="gallery-item" data-reveal>
+              <img
+                src="assets/Letras.jpg"
+                alt="Letras luminosas en exterior"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Letras luminosas</figcaption>
+            </figure>
 
-            <article class="gallery-card" data-reveal>
-              <p class="gallery-tag">Caballete + bienvenida</p>
-              <h3>Perfecto para ensenar elegancia en accesos o recepcion.</h3>
-              <span>Placeholder listo para reemplazo.</span>
-            </article>
+            <figure class="gallery-item" data-reveal>
+              <img
+                src="assets/Caballete de madera.jpg"
+                alt="Caballete de madera decorado"
+                loading="lazy"
+                decoding="async"
+              >
+              <figcaption>Bienvenida y caballete</figcaption>
+            </figure>
 
-            <article class="gallery-card gallery-card-wide" data-reveal>
-              <p class="gallery-tag">Carrito de shots / paletas</p>
-              <h3>Muestra productos con un angulo limpio y una mesa bien montada.</h3>
-              <span>Placeholder listo para reemplazo.</span>
-            </article>
+            <figure class="gallery-item gallery-item-wide" data-reveal>
+              <div class="gallery-duo">
+                <img
+                  src="assets/Carrito de Shots (2).jpg"
+                  alt="Invitados disfrutando carrito de shots"
+                  loading="lazy"
+                  decoding="async"
+                >
+                <img
+                  src="assets/Snaks.jpg"
+                  alt="Carrito de shots en evento"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <figcaption>Shots y paletas</figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
       <section class="section contact" id="contacto">
-        <div class="container contact-grid">
+        <div class="container contact-shell">
           <div class="contact-copy" data-reveal>
-            <p class="section-kicker">Cotizacion rapida</p>
-            <h2>Escribeme por WhatsApp y te comparto opciones para tu evento.</h2>
-            <p>
-              Esta version esta lista para publicarse gratis. Solo necesitas personalizar tu
-              nombre, tu numero y tu zona de servicio en un solo archivo.
+            <img
+              class="contact-logo"
+              src="assets/LOGO (NEGRO).png"
+              alt="IME360"
+              loading="lazy"
+              decoding="async"
+            >
+            <p class="section-kicker">Contacto</p>
+            <h2>Cotiza por WhatsApp.</h2>
+            <p class="contact-text">
+              Envia fecha, ciudad y los servicios que te interesan. Si buscas 3 o mas, pregunta por
+              el precio especial de paquete.
             </p>
 
             <div class="contact-actions">
@@ -277,26 +490,17 @@
                 Abrir WhatsApp
               </a>
               <button class="btn btn-secondary js-copy-link" type="button">
-                Copiar enlace de contacto
+                Copiar enlace
               </button>
             </div>
 
             <p class="copy-feedback" data-copy-feedback aria-live="polite"></p>
 
-            <dl class="contact-meta">
-              <div>
-                <dt>Marca</dt>
-                <dd data-brand-name>Tu Marca de Eventos</dd>
-              </div>
-              <div>
-                <dt>Zona de servicio</dt>
-                <dd data-service-area>Tu ciudad y alrededores</dd>
-              </div>
-              <div>
-                <dt>Canal principal</dt>
-                <dd>WhatsApp con mensaje predefinido</dd>
-              </div>
-            </dl>
+            <ul class="contact-list">
+              <li data-service-area>Tu ciudad y alrededores</li>
+              <li>Precios visibles en la pagina</li>
+              <li>QR listo para compartir</li>
+            </ul>
           </div>
 
           <div class="qr-card" data-reveal>
@@ -310,9 +514,7 @@
               >
             </div>
             <p class="qr-title">Escanea para cotizar</p>
-            <p class="qr-text">
-              Usalo en tu celular, compartelo por mensaje o colocalo en material impreso.
-            </p>
+            <p class="qr-text">Tambien puedes compartir este QR en flyers o redes.</p>
           </div>
         </div>
       </section>
@@ -320,13 +522,14 @@
 
     <footer class="site-footer">
       <div class="container footer-row">
-        <div>
-          <p class="footer-title" data-brand-name>Tu Marca de Eventos</p>
-          <p class="footer-text">
-            Landing lista para GitHub Pages hoy y facil de adaptar a Apps Script despues.
-          </p>
-        </div>
-        <p class="footer-text">Edita <strong>script.js</strong> para personalizar los datos reales.</p>
+        <img
+          class="footer-logo"
+          src="assets/LOGO (NEGRO).png"
+          alt="IME360"
+          loading="lazy"
+          decoding="async"
+        >
+        <p class="footer-text">Eventos | Bodas | XV anos | Graduaciones</p>
       </div>
     </footer>
   </div>
@@ -340,7 +543,7 @@
     >
       WhatsApp
     </a>
-    <a class="btn btn-secondary" href="#contacto">Ver QR</a>
+    <a class="btn btn-secondary" href="#servicios">Precios</a>
   </div>
 
   <script src="script.js"></script>
