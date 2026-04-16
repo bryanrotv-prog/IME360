@@ -113,7 +113,7 @@ const initContactData = () => {
     } catch (error) {
       if (copyFeedback) {
         copyFeedback.textContent =
-          "No se pudo copiar automaticamente. Usa el boton de WhatsApp para abrir el enlace.";
+          "No se pudo copiar automáticamente. Usa el botón de WhatsApp para abrir el enlace.";
       }
     }
   });
