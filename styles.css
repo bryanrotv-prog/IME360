@@ -135,6 +135,7 @@ section[id] {
 
 .brand {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -142,6 +143,7 @@ section[id] {
   min-height: 4.7rem;
   padding: 0 0.75rem;
   margin: 0 auto;
+  text-align: center;
   transition:
     width 220ms ease,
     min-height 220ms ease,
@@ -152,23 +154,39 @@ section[id] {
     transform 220ms ease;
 }
 
-.brand-logo,
 .contact-logo,
 .footer-logo {
   width: auto;
   height: auto;
 }
 
-.brand-logo {
-  width: min(12.75rem, 62vw);
-  max-height: 4.05rem;
-  object-fit: contain;
-  margin: 0 auto;
-  transform: none;
-  transform-origin: center center;
+.brand-word {
+  display: block;
+  font-family: "Sora", sans-serif;
+  color: var(--primary-950);
+  font-size: clamp(2.1rem, 12vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 0.9;
   transition:
-    width 220ms ease,
-    max-height 220ms ease;
+    font-size 220ms ease,
+    letter-spacing 220ms ease;
+}
+
+.brand-line {
+  display: block;
+  max-height: 1rem;
+  margin-top: 0.42rem;
+  color: var(--primary-800);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition:
+    opacity 180ms ease,
+    max-height 180ms ease,
+    margin 180ms ease;
 }
 
 .site-nav {
@@ -237,9 +255,16 @@ section[id] {
   box-shadow: 0 10px 20px rgba(16, 42, 59, 0.08);
 }
 
-.site-header.is-scrolled .brand-logo {
-  width: 6.8rem;
-  max-height: 2.45rem;
+.site-header.is-scrolled .brand-word {
+  font-size: 1.35rem;
+  letter-spacing: -0.06em;
+}
+
+.site-header.is-scrolled .brand-line {
+  max-height: 0;
+  margin-top: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .section {
@@ -934,11 +959,15 @@ section[id] {
     justify-content: flex-start;
   }
 
-  .brand-logo {
-    width: 10rem;
-    max-height: none;
-    margin: 0;
-    transform: none;
+  .brand-word {
+    font-size: 1.9rem;
+    line-height: 0.95;
+  }
+
+  .brand-line {
+    margin-top: 0.28rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.22em;
   }
 
   .site-header.is-scrolled .header-row {
@@ -958,9 +987,16 @@ section[id] {
     box-shadow: none;
   }
 
-  .site-header.is-scrolled .brand-logo {
-    width: 10rem;
+  .site-header.is-scrolled .brand-word {
+    font-size: 1.9rem;
+    letter-spacing: -0.08em;
+  }
+
+  .site-header.is-scrolled .brand-line {
     max-height: none;
+    margin-top: 0.28rem;
+    opacity: 1;
+    overflow: visible;
   }
 
   .hero-grid {
