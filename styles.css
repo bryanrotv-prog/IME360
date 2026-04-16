@@ -328,6 +328,27 @@ section[id] {
   max-width: 36ch;
 }
 
+.contact-deposit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.9rem 0 0;
+  padding: 0.72rem 0.95rem;
+  border-radius: var(--radius-pill);
+  background: rgba(44, 112, 158, 0.1);
+  border: 1px solid rgba(44, 112, 158, 0.12);
+  color: var(--primary-900);
+  font-weight: 800;
+}
+
+.contact-deposit::before {
+  content: "";
+  width: 0.46rem;
+  height: 0.46rem;
+  border-radius: 999px;
+  background: var(--primary-700);
+}
+
 .qr-text {
   max-width: 26ch;
   margin-inline: auto;
