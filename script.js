@@ -1,9 +1,9 @@
 const siteConfig = {
   brandName: "IME360",
-  whatsappNumber: "5210000000000",
+  whatsappNumber: "528443407452",
   whatsappMessage:
-    "Hola, quiero cotizar servicios para mi evento. Me interesa recibir informacion y disponibilidad.",
-  serviceArea: "tu ciudad y alrededores",
+    "Hola, quiero cotizar mi evento con IME360. Me interesa conocer disponibilidad, servicios y precio individual o paquete especial.",
+  serviceArea: "Arteaga, Coahuila",
 };
 
 const root = document.documentElement;
@@ -20,7 +20,7 @@ const buildWhatsAppUrl = (message) => {
 const buildDefaultMessage = () => siteConfig.whatsappMessage;
 
 const buildServiceMessage = (serviceName) =>
-  `Hola, quiero cotizar el servicio de ${serviceName} para mi evento. ${siteConfig.whatsappMessage}`;
+  `Hola, quiero cotizar ${serviceName} para mi evento con IME360. Me interesa conocer disponibilidad y precio.`;
 
 const buildQrUrl = (link) =>
   `https://quickchart.io/qr?text=${encodeURIComponent(link)}&size=320&margin=1&dark=%23173e57&light=%23ffffff`;
@@ -48,6 +48,36 @@ const initImageFallbacks = () => {
       applyFallback();
     }
   });
+};
+
+const initHeaderState = () => {
+  const header = document.querySelector(".site-header");
+  const stickyCta = document.querySelector(".sticky-cta");
+  const mobileQuery = window.matchMedia("(max-width: 859px)");
+
+  if (!header) {
+    return;
+  }
+
+  const updateHeaderState = () => {
+    const scrolled = window.scrollY > 36;
+    const showSticky = mobileQuery.matches && window.scrollY > 420;
+
+    header.classList.toggle("is-scrolled", scrolled);
+
+    if (stickyCta) {
+      stickyCta.classList.toggle("is-visible", showSticky);
+    }
+  };
+
+  updateHeaderState();
+  window.addEventListener("scroll", updateHeaderState, { passive: true });
+
+  if (mobileQuery.addEventListener) {
+    mobileQuery.addEventListener("change", updateHeaderState);
+  } else if (mobileQuery.addListener) {
+    mobileQuery.addListener(updateHeaderState);
+  }
 };
 
 const initContactData = () => {
@@ -118,3 +148,4 @@ const initReveal = () => {
 initContactData();
 initReveal();
 initImageFallbacks();
+initHeaderState();
